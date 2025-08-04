@@ -44,7 +44,7 @@ const PublicNavbar = () => {
 
           <a href="/#about" className="text-center py-2 rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white">ABOUT</a>
           
-          <a href="/login" className="text-center py-2 rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white">LOGIN</a>
+          <Link to="/login" className="text-center py-2 rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white">LOGIN</Link>
         </div>
       </nav>
     </>

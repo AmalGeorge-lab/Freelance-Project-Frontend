@@ -51,9 +51,9 @@ const FreelancerNavbar = () => {
 
       <nav id="toggle-nav" className={"block md:hidden fixed top-[80px] left-0 right-0 bg-white overflow-hidden z-1 transition-all duration-[300ms] ease"} style={{ maxHeight : openNav ? toggleNav.scrollHeight : 0 }}>
         <div className="flex flex-col px-[20px] gap-y-3 pb-[20px]">
-          <a href="/freelancer/dashboard" className="text-center py-2 text-black rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white">MY GIGS</a>
+          <Link to="/freelancer/dashboard" className="text-center py-2 text-black rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white">MY GIGS</Link>
 
-          <a href="/freelancer/orders" className="text-center py-2 rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white">ORDERS</a>
+          <Link to="/freelancer/orders" className="text-center py-2 rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white">ORDERS</Link>
           
           <button onClick={logoutHandler} className="text-center py-2 rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white">LOGOUT</button>
         </div>

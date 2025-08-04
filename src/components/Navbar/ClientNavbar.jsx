@@ -53,11 +53,11 @@ const ClientNavbar = () => {
 
       <nav id="toggle-nav" className={"block md:hidden fixed top-[80px] left-0 right-0 bg-white overflow-hidden z-1 transition-all duration-[300ms] ease"} style={{ maxHeight : openNav ? toggleNav.scrollHeight : 0 }}>
         <div className="flex flex-col px-[20px] gap-y-3 pb-[20px]">
-          <a href="/client/dashboard" className="text-center py-2 text-black rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white"
-          style={{ fontFamily : "Rowdies" }}>DASHBOARD</a>
+          <Link to="/client/dashboard" className="text-center py-2 text-black rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white"
+          style={{ fontFamily : "Rowdies" }}>DASHBOARD</Link>
 
-          <a href="/client/orders" className="text-center py-2 rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white"
-          style={{ fontFamily : "Rowdies" }}>ORDERS</a>
+          <Link to="/client/orders" className="text-center py-2 rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white"
+          style={{ fontFamily : "Rowdies" }}>ORDERS</Link>
           
           <button onClick={logoutHandler} className="text-center py-2 rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white"
           style={{ fontFamily : "Rowdies" }}>LOGOUT</button>
