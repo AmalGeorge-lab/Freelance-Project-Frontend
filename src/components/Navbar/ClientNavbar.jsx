@@ -52,7 +52,7 @@ const ClientNavbar = () => {
       </header>
 
       <nav id="toggle-nav" className={"block md:hidden fixed top-[80px] left-0 right-0 bg-white overflow-hidden z-1 transition-all duration-[300ms] ease"} style={{ maxHeight : openNav ? toggleNav.scrollHeight : 0 }}>
-        <div className="flex flex-col px-[10px] gap-y-3 pb-[20px]">
+        <div className="flex flex-col px-[20px] gap-y-3 pb-[20px]">
           <Link to="/client/dashboard" className="text-center py-2 text-black rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white"
           style={{ fontFamily : "Rowdies" }}>DASHBOARD</Link>
 
