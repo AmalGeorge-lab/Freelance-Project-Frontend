@@ -51,7 +51,7 @@ const FreelancerGigPage = () => {
   let gigInfo;
   if(isSuccess){
     gigInfo = (
-      <section className="flex flex-col w-sm gap-y-5 shadow-[-6px_6px_15px_rgba(0,0,0,0.5)] p-4 rounded-xl">
+      <section className="flex flex-col w-full gap-y-5 shadow-[-6px_6px_15px_rgba(0,0,0,0.5)] p-4 rounded-xl">
 
         <img src={data.imageURL} alt="image" className="h-64 rounded-md object-cover w-full"/>
         <div className="flex gap-x-5">
@@ -82,7 +82,7 @@ const FreelancerGigPage = () => {
   let reviews;
   if(reviewFetchSuccess && reviewsData.length){
     reviews = (
-      <section className="flex flex-col gap-y-4 shadow-[-6px_6px_15px_rgba(0,0,0,0.5)] p-4 rounded-xl w-sm">
+      <section className="flex flex-col gap-y-4 shadow-[-6px_6px_15px_rgba(0,0,0,0.5)] p-4 rounded-xl w-full">
         <h2 className="text-center text-xl" style={{ fontFamily : "Rowdies" }}>REVIEWS</h2>
         <section className="flex flex-col gap-y-10">
 
