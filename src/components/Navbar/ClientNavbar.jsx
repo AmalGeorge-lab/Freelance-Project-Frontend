@@ -26,7 +26,7 @@ const ClientNavbar = () => {
 
   return (
     <>
-      <header className="flex h-[80px] justify-between items-center px-3 z-2 fixed top-0 left-0 right-0 bg-white">
+      <header className="flex h-[80px] justify-between items-center pl-3 z-2 fixed top-0 left-0 right-0 bg-white">
 
         <section className="flex items-center h-full mr-5 gap-x-3">
           <img src={skillhiveLogo} alt="Logo" className="h-[80%] rounded-full"/>
