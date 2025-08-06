@@ -54,7 +54,7 @@ const ChatSection = () => {
     <>
       <section className="flex flex-col items-center px-10">
 
-        <section className="w-md text-xs md:text-[15px] md:w-3xl p-3 pb-18 flex flex-col gap-y-2 ">
+        <section className="w-sm text-xs md:text-[15px] md:w-3xl p-3 pb-16 flex flex-col gap-y-2 ">
           { messages.map((eachMessage)=>{
             return (
               <div className={`flex px-3 py-2 rounded-md max-w-xs md:max-w-md ${ currentUser === eachMessage.senderId ? "self-end bg-blue-200" : "self-start bg-gray-200" }` } key={eachMessage._id}>
@@ -66,7 +66,7 @@ const ChatSection = () => {
           })}
         </section>
 
-        <section className="fixed w-md bottom-0 flex gap-x-5 md:w-3xl bg-white py-2">
+        <section className="fixed w-sm bottom-0 flex gap-x-5 md:w-3xl bg-white py-2">
           <input value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Type your message....." type="text" className="flex-1 p-1 pl-3 rounded-md border-[2px] outline-none"/>
           <button className="px-3 py-3 bg-[rgba(12,152,138,1)] text-white rounded-full hover:bg-[rgba(11,140,127,0.8)]" style={{ fontFamily : "Rowdies" }} onClick={()=>sendMessage()}><FaPaperPlane/></button>
         </section>
