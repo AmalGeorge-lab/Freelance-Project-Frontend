@@ -105,7 +105,7 @@ const FreelancerGigPage = () => {
   }
 
   return (
-    <section className="flex md:flex-row flex-col p-5 gap-5 justify-center">
+    <section className="flex md:flex-row flex-col p-2 gap-5 justify-center">
       { isSuccess && gigInfo }
       { reviewFetchSuccess && reviews }
     </section>
