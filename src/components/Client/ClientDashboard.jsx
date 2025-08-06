@@ -84,7 +84,7 @@ const ClientDashboard = () => {
         {userDataSuccess && <h1 style={{ fontFamily : "Caprasimo" }} className="text-2xl w-full text-white bg-black text-center py-2 border-[5px] border-orange-400 rounded-lg">Welcome {userData.username} ! {userData.email}</h1>}
         <h1 style={{ fontFamily : "Caprasimo" }} className="text-2xl md:w-5xl md:text-5xl w-sm text-white">Find the perfect freelance services for your business</h1>
         <div className="flex gap-x-5 md:flex-row flex-col gap-y-4">
-          <select name="category" className="bg-white p-3 rounded-md outline-none w-sm" defaultValue={filter.category} onChange={handleFilterChange}>
+          <select name="category" className="bg-white p-3 rounded-md outline-none w-[80%]" defaultValue={filter.category} onChange={handleFilterChange}>
             <option value="Logo Design">Logo Design</option>
             <option value="Website Development">Website Development</option>
             <option value="Social Media Marketing">Social Media Marketing</option>
@@ -92,7 +92,7 @@ const ClientDashboard = () => {
             <option value="Video Editing">Video Editing</option>
             <option value="Mobile App Development">Mobile App Development</option>
           </select>
-          <input type="number" name="price" value={filter.price} onChange={handleFilterChange} placeholder="Price upto....." className="bg-white p-3 rounded-md outline-none w-sm"/>
+          <input type="number" name="price" value={filter.price} onChange={handleFilterChange} placeholder="Price upto....." className="bg-white p-3 rounded-md outline-none w-[80%]"/>
         </div>
       </section>
       { isSuccess && content }
