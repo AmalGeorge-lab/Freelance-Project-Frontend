@@ -26,7 +26,7 @@ const ClientNavbar = () => {
 
   return (
     <>
-      <header className="flex h-[80px] justify-between items-center pl-3 z-2 fixed top-0 left-0 right-0 bg-white">
+      <header className="flex h-[80px] justify-between items-center px-3 z-2 fixed top-0 left-0 right-0 bg-white">
 
         <section className="flex items-center h-full mr-5 gap-x-3">
           <img src={skillhiveLogo} alt="Logo" className="h-[80%] rounded-full"/>
@@ -52,7 +52,7 @@ const ClientNavbar = () => {
       </header>
 
       <nav id="toggle-nav" className={"block md:hidden fixed top-[80px] left-0 right-0 bg-white overflow-hidden z-1 transition-all duration-[300ms] ease"} style={{ maxHeight : openNav ? toggleNav.scrollHeight : 0 }}>
-        <div className="flex flex-col px-[20px] gap-y-3 pb-[20px]">
+        <div className="flex flex-col px-[10px] gap-y-3 pb-[20px]">
           <Link to="/client/dashboard" className="text-center py-2 text-black rounded-md bg-[rgb(247,_137,_137)] hover:bg-zinc-900 hover:text-white"
           style={{ fontFamily : "Rowdies" }}>DASHBOARD</Link>
 
