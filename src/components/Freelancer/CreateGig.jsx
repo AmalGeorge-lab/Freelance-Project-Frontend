@@ -61,7 +61,7 @@ const CreateGig = () => {
 
   return (
     <section className="flex justify-center items-center p-2">
-      <section className="p-4 rounded-md w-[80%] md:w-[50%] shadow-[-1px_1px_15px_rgb(41,162,233)] flex flex-col gap-y-5">
+      <section className="p-4 rounded-md w-[90%] md:w-[50%] shadow-[-1px_1px_15px_rgb(41,162,233)] flex flex-col gap-y-5">
         <h2 className="text-center text-[20px]" style={{ fontFamily : "Rowdies" }}>CREATE GIG</h2>
 
         {isPending && <AlertMessage type="loading" message="Loading....." />}
